@@ -1,1 +1,36 @@
-/*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap");
+* {
+  margin: 0rem;
+  padding: 0rem;
+  border: 0rem;
+  outline: 0rem;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+html, body {
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+button, textarea, input {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.shoes-card {
+  width: min(100%, 42rem);
+  height: 12.5rem;
+  border-radius: 0.5rem;
+  background-color: #2E2E2E;
+  padding: 1.1rem 2rem;
+}/*# sourceMappingURL=styles.css.map */
