@@ -36,6 +36,19 @@ button, textarea, input {
   z-index: 1;
   overflow: hidden;
 }
+.shoes-card:hover .green-circle {
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 0px;
+}
+.shoes-card:hover header h1 {
+  transform: translateY(0px);
+}
+.shoes-card:hover header img {
+  transform: translateY(0px) rotate(-20deg);
+}
+.shoes-card:hover .hide-part {
+  transform: translateY(0px);
+}
 
 header {
   text-align: center;
@@ -45,21 +58,22 @@ header img {
   width: 17rem;
   height: 7rem;
   margin-bottom: 3rem;
-  transform: rotate(-20deg);
+  transform: translateY(100%) rotate(-20deg);
 }
 header h1 {
   color: #fff;
   font-size: 2rem;
   font-weight: 600;
+  transform: translateY(300%);
 }
 header .green-circle {
-  width: 24rem;
+  width: 100%;
   height: 16rem;
   background-color: chartreuse;
-  border-radius: 50%;
   position: absolute;
+  border-radius: 50%;
   top: -30px;
-  right: -75px;
+  right: -100px;
   z-index: -1;
 }
 
@@ -142,4 +156,12 @@ footer button {
   padding: 0.7rem 0rem;
   font-size: 1.1rem;
   border-radius: 0.5rem;
+}
+
+.hide-part {
+  transform: translateY(200%);
+}
+
+header img, header h1, .hide-part, .green-circle {
+  transition: 0.3s ease 0.1s;
 }/*# sourceMappingURL=styles.css.map */
